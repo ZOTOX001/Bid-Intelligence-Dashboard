@@ -197,7 +197,7 @@ def extract_bid(text, links):
     hyperlink_summaries = {}
     for ref in ref_names:
         target_url = next((lnk for lnk in links if ref in lnk), None)
-        
+
         if target_url:
             txt = download_pdf_text(target_url)
             if txt:
